@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS server</title>
+    <script>
+        function showProperties(element) {
+            document.getElementById('message').innerHTML = element.alt
+            
+        }
+    </script>
+    <style>
+        p{
+            width: 388px;
+            height: 325px;
+            border: 5px solid black;
+            margin: 0 auto;
+        }
+       
+    </style>
+    
+</head>
+
+<body onmouseover="showProperties(this)"
+onmouseleave="document.getElementById('message').innerHTML = 'Hover a image';">
+<img class="preview" alt = "Tiger 1" src="c:\Users\DELL\Downloads\java\z5332018510565_6e6f2231156782b3c9824db21fe99833.jpg"
+onmouseover="showProperties(this)"
+onmouseleave="document.getElementById('message').innerHTML = 'Hover a image';">
+<img class="preview"alt = "Tiger 2" src="c:\Users\DELL\Downloads\java\z5332018525603_d54b8c07c64a315fef6ba906bef15507.jpg"
+onmouseover="showProperties(this)"
+ondragleave="document.getElementById('message').innerHTML = 'Hover a image';">
+<img class="preview"alt = "Tiger 3" src="c:\Users\DELL\Downloads\java\z5332018526686_be106fc12535936a9c38356f720ecfb2.jpg"
+onmouseover="showProperties(this)"
+onmouseleave="document.getElementById('message').innerHTML = 'Hover a image';">
+<img class="preview"alt = "Tiger 4" src="c:\Users\DELL\Downloads\java\z5332018536699_512be8e38be69501f15044471a1a70fd.jpg"
+onmouseover="showProperties(this)"
+onmouseleave="document.getElementById('message').innerHTML = 'Hover a image';">
+<p id="message">Hover a message</p>
+</body>
+
+</html>
